@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>SnippetFile1</Title>
+      <Author>dlively</Author>
+      <Description>Insert a summary/param/return header for a method</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>summ</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>summary_text</ID>
+          <ToolTip>Insert description of method</ToolTip>
+          <Default>summary_text</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>returns_text</ID>
+          <ToolTip>Description of return value</ToolTip>
+          <Default>returns_text</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>parameter_name</ID>
+          <ToolTip>Name of the parameter</ToolTip>
+          <Default>parameter_name</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>parameter_description</ID>
+          <ToolTip>parameter_description</ToolTip>
+          <Default>Description</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp" Kind="method decl">
+        <![CDATA[/// <summary>
+    /// $summary_text$
+    /// </summary>
+    /// <param name="$parameter_name$">$parameter_description$</param>
+    /// <returns>$returns_text$</returns>]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
